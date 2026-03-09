@@ -1,0 +1,19 @@
+package sets;
+import java.util.HashSet;
+public class MaintainInsertionOrder {
+    public static void main(String[] args){
+        HashSet<Integer> set = new HashSet<>();
+
+        set.add(2);
+        set.add(3);
+        set.add(2);
+        set.add(3);
+        set.add(12);
+        set.add(31);
+        set.add(21);
+        set.add(32);
+        System.out.println(set);
+    }}
+
+
+

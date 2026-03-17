@@ -1,0 +1,25 @@
+package Assignment4.module8;
+import java.util.*;
+
+public class GroupAnagrams {
+    // LeetCode 49 - Group Anagrams
+
+        public static void main(String[] args) {
+
+            String[] strs = {"eat","tea","tan","ate","nat","bat"};
+
+            Map<String, List<String>> map = new HashMap<>();
+
+            for(String s : strs){
+                char[] c = s.toCharArray();
+                Arrays.sort(c);
+                String key = new String(c);
+
+                map.putIfAbsent(key,new ArrayList<>());
+                map.get(key).add(s);
+            }
+
+            System.out.println(map.values());
+        }
+    }
+
